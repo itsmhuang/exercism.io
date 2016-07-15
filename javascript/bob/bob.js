@@ -18,9 +18,7 @@ Bob.prototype.hey = function(input) {
 		return "Sure.";
 	}
 	//everything else, return whatever
-	else {
 		return "Whatever.";
-	}		
 };
 
 module.exports = Bob;
