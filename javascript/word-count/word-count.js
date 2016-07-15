@@ -4,12 +4,11 @@ Words.prototype.count = function(words) {
 	//to lower case
 	//replace regex with one space (remove tabs after converting to arr)
 	//convert to array
+	//remove tabs (empty string in array element) with filter
 	var arr = words.toLowerCase()
 				.replace(/\s/g, " ")
-				.split(" ");
-
-	//remove tabs (empty string in array element)
-	arr = arr.filter(function(e) {
+				.split(" ")
+				.filter(function(e) {
 		return e != "";
 	});
 
